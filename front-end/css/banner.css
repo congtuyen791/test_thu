@@ -1,0 +1,90 @@
+/* banner --------------------------------- */
+
+.banner {
+    height: 505px;
+    display: grid;
+    grid-template-columns: 15% 84%;
+    gap: 1%;
+}
+
+.danhmuc {
+    display: grid;
+    grid-template-rows: 40px auto;
+    background: #cef1eb;
+}
+
+.danhmuc h3 {
+    text-align: center;
+    padding: 5px;
+    background: rgba(10, 16, 48, 0.849);
+    border: 1px solid rgba(16, 21, 51, 0.562);
+    color: rgba(243, 243, 243, 0.877);
+}
+
+.danhmuc .dieuhuong li {
+    display: block;
+    line-height: 2;
+    padding-left: 20px;
+}
+
+.danhmuc .dieuhuong a {
+    /* padding: 5px 0 0 0; */
+    text-decoration: none;
+    color: rgba(46, 46, 46, 0.89);
+    font-weight: 500;
+}
+
+.danhmuc .dieuhuong li a:hover {
+    padding: 10px 5px;
+    color: rgb(0, 0, 0);
+}
+
+.banner .anh_banner img {
+    width: 100%;
+    height: 505px;
+    position: relative;
+}
+
+.banner img:hover {
+    filter: saturate(150%);
+}
+
+.banner .anh_banner {
+    text-align: left;
+}
+
+.fas {
+    font-size: 30px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.603);
+    color: #fff;
+}
+
+.banner_nut .fa-chevron-left {
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.banner_nut .fa-chevron-right {
+    margin-top: -300px;
+    margin-left: 1150px;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+}
+
+
+/* */
+
+
+/* .mySlides img{
+    position: absolute;
+    width: 1440px;
+    height: 605px;
+}
+.anh{
+    position: relative;
+} */

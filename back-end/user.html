@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/them.css">
+
+    <style>
+        table tr td {
+            height: 50px;
+        }
+
+        #form_them {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="left">
+                <div class="dieu_huong">
+                    <a href="index.html">Tất cả sản phẩm</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="themsp.html">Thêm sản phẩm</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="danh-muc.html">Danh mục</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="user.html">Tài khoản</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="slide.html">Slide</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="tin-tuc.html">Tin tức</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="/front-end/index.html" target="_blank">Về trang khách</a>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Tất cả người dùng</h2>
+                <form action="" id="form_them">
+                    <div class="form_label">
+                        <label for="">Họ tên:</label>
+                        <input type="text" name="name" id="name" autocomplete="off" placeholder="Nhập vào tên...">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Tải ảnh đại diện lên:</label>
+                        <input type="file" name="avatar" id="avatar" autocomplete="off" placeholder="Tải ảnh lên"
+                            onchange="previewFile()">
+                        <img src="" alt="xem trước" id="avatar_preview" height="200">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Tuổi:</label>
+                        <input type="number" name="gia" id="gia" autocomplete="off" placeholder="Tuổi....">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Gioi tinh:</label>
+                        <input type="number" name="gia_km" id="gia_km" autocomplete="off" placeholder="Giới tính...">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Địa chỉ:</label>
+                        <input type="number" name="gia_km" id="gia_km" autocomplete="off" placeholder="Giới tính...">
+                    </div>
+
+                    <button type="button" onclick="Insert()">Thêm người dùng</button>
+                </form><br><br>
+
+                <table id="table-user">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Họ tên</th>
+                            <th>email</th>
+                            <th>Địa chỉ</th>
+                            <th colspan="2 " onclick="FormAdd()">Tao moi</th>
+                        </tr>
+                    </thead>
+
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/user.js "></script>
+</body>
+
+</html>

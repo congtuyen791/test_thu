@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/them.css">
+<style>
+    #add-slide{
+        display: none;
+    }
+    #edit-slide{
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="left">
+                <div class="dieu_huong">
+                    <a href="index.html">Tất cả sản phẩm</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="themsp.html">Thêm sản phẩm</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="danh-muc.html">Danh mục</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="user.html">Tài khoản</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="slide.html">Slide</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="tin-tuc.html">Tin tức</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="/front-end/index.html" target="_blank">Về trang khách</a>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Tất cả ảnh slide</h2>
+                <form action="" id="edit-slide" method="post" enctype="multipart/form-data">
+                    <div class="form_label">
+                        <label for="">Tên ảnh</label>
+                        <input type="text" name="name_sl" id="name_up">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Ảnh sản phẩm:</label>
+                        <input type="file" name="avatar_sl" id="avatar_sl" placeholder="Ảnh sản phẩm"
+                            onchange="previewFileUp()">
+                        <img src="" alt="xem trước" id="avatar_preview_up" height="200">
+                    </div>
+                    <button type="button" onclick="SaveUpdate()">Sua ảnh slide</button>
+                </form><br><br>
+                <table id="table-slides">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên</th>
+                            <th>Anh</th>
+                            <th colspan="2" style="color: blue; cursor: pointer;"><a href="them-sl.html">Tạo mới</a></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/slide.js"></script>
+</body>
+
+</html>

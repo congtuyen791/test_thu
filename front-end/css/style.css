@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    width: 1440px;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 50px 80px;
+}
+
+header .top {
+    width: 100%;
+    background: #e2f3f0;
+    color: #333e48;
+    padding: 0 60px;
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    line-height: 50px;
+}
+
+.top .seach {
+    text-align: end;
+}
+
+.top .seach form>input {
+    width: 300px;
+    height: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.top .seach form button {
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #a9e4da;
+}
+
+.top .seach from button:hover {
+    background: #28ad97;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    padding: 0 60px;
+    font-size: 16px;
+    line-height: 70px;
+    border-bottom: 1px solid #6d6d6d4b;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333e48;
+}
+
+nav {
+    padding: 0 30px;
+    text-align: center;
+}
+
+nav>ul>li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: #333e48;
+    font-weight: bold;
+}
+
+nav>ul>li>a:hover {
+    color: #0071db;
+}
+
+.menu .right {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: end;
+}
+
+.menu .right .cart {
+    margin-right: 80px;
+}
+
+.menu .right img {
+    cursor: pointer;
+}
+
+
+/* css dm */
+
+
+/* css footer */
+
+footer {
+    display: grid;
+    grid-template-rows: 300px 60px;
+}
+
+.box_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px 60px;
+    background: #ecececda;
+    color: #2c2c2c;
+    gap: 30px;
+    text-align: justify;
+}
+
+.box_footer h3 {
+    color: #2c2c2c;
+    line-height: 2;
+}
+
+.lien_k ul li {
+    list-style: none;
+}
+
+.lien_k ul li a {
+    text-decoration: none;
+    line-height: 1.5;
+    color: #2c2c2c;
+}
+
+.lien_k ul li a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.thong_t p {
+    line-height: 1.5;
+}
+
+.footer_end {
+    background: #000000;
+    color: #9b9b9b;
+    font-size: 14px;
+    text-align: center;
+    line-height: 60px;
+}

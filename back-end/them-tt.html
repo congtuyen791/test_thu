@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/them.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="left">
+                <div class="dieu_huong">
+                    <a href="index.html">Tất cả sản phẩm</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="themsp.html">Thêm sản phẩm</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="danh-muc.html">Danh mục</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="user.html">Tài khoản</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="slide.html">Slide</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="tin-tuc.html">Tin tức</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="/front-end/index.html" target="_blank">Về trang khách</a>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Tất cả bài viết tin tức</h2>
+                <form action="" id="them" method="post" enctype="multipart/form-data">
+                    <div class="form_label">
+                        <label for="">Tên bài viết:</label>
+                        <input type="text" name="name" id="name" autocomplete="off">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Nội dung:</label>
+                        <textarea name="noiDung" id="noiDung" cols="30" rows="10"
+                             autocomplete="off" placeholder=""></textarea>
+                    </div>
+                    <div class="form_label">
+                        <label for="">Ảnh tin tức:</label>
+                        <input type="file" name="avatar" id="avatar" placeholder=""
+                            onchange="previewFile()">
+                        <img src="" alt="xem trước" id="avatar_preview" height="200">
+                    </div>
+                    <button type="button" onclick="Insert()">Thêm bài viết</button>
+                </form><br><br>
+                
+            </div>
+        </main>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/add-tt.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/them.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="left">
+                <div class="dieu_huong">
+                    <a href="index.html">Tất cả sản phẩm</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="themsp.html">Thêm sản phẩm</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="danh-muc.html">Danh mục</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="user.html">Tài khoản</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="slide.html">Slide</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="tin-tuc.html">Tin tức</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="/front-end/index.html" target="_blank">Về trang khách</a>
+                </div>
+            </div>
+            <div class="right" id="them">
+                <h2>Thêm sản phẩm</h2>
+                <form action="" id="form_them">
+                    <div class="form_label">
+                        <label for="">Tên sản phẩm:</label>
+                        <input type="text" name="name" id="name"  autocomplete="off" placeholder="Tên sản phẩm...">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Ảnh sản phẩm:</label>
+                        <input type="file" name="avatar" id="avatar"  autocomplete="off" placeholder="Ảnh sản phẩm"
+                            onchange="previewFile()">
+                        <img src="" alt="xem trước" id="avatar_preview" height="200">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Giá sản phẩm:</label>
+                        <input type="number" name="gia" id="gia"  autocomplete="off" placeholder="Giá sản phẩm....">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Giá khuyến mãi:</label>
+                        <input type="number" name="gia_km" id="gia_km"  autocomplete="off" placeholder="Giá khuyến mại (nếu có)...">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Số lượng</label>
+                        <input type="number" name="so_luong" id="so_luong"  autocomplete="off" placeholder="Số lượng sản phẩm...">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Kích thước sản phẩm:</label>
+                        <input type="text" name="kich_thuoc" id="kich_thuoc"
+                             autocomplete="off" placeholder="VD: size: X M L.. hoặc 38 39 40...">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Màu sắc sản phẩm:</label>
+                        <input type="text" name="mau_sac" id="mau_sac"  autocomplete="off" placeholder="VD: Xanh, vàng, đỏ">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Danh mục:</label>
+                        <input type="text" name="chu_de" id="chu_de"  autocomplete="off" placeholder="VD: mới, hot...">
+                    </div>
+                    <div class="form_label">
+                        <label for="">Mô tả sản phẩm:</label>
+                        <textarea name="mo_ta" id="mo_ta" cols="30" rows="10"
+                             autocomplete="off" placeholder="Nhập vào mô tả sản phẩm..."></textarea>
+                    </div>
+                    <button type="button" onclick="Insert()">Thêm sản phẩm</button>
+                </form><br><br>
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/add-product.js "></script>
+
+</body>
+
+</html>

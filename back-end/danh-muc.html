@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+        #form_add {
+            display: none;
+        }
+
+        #form_edit {
+            display: none;
+        }
+
+        form button {
+            width: 13%;
+            height: 50px;
+            margin-left: 10.5%;
+            cursor: pointer;
+            background-color: #333e48;
+            color: #fff;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background: #fff;
+            color: #333e48;
+        }
+
+        table tr td {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="left">
+                <div class="dieu_huong">
+                    <a href="index.html">Tất cả sản phẩm</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="themsp.html">Thêm sản phẩm</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="danh-muc.html">Danh mục</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="user.html">Tài khoản</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="slide.html">Slide</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="tin-tuc.html">Tin tức</a>
+                </div>
+                <div class="dieu_huong">
+                    <a href="/front-end/index.html" target="_blank">Về trang khách</a>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Tất cả Danh mục</h2>
+                <form action="" id="form_add" method="post">
+                    <div class="form_label" style="height: 100px; text-align: left;">
+                        <label for="" style="height: 30px; margin-right: 20px;">Tên danh mục:</label>
+                        <input type="text" autocomplete="off" name="name_dm_add" id="name_dm_add"
+                            placeholder="Nhập tên danh mục..." style="height: 30px; width: 300px;"><br>
+                        <button type="button" onclick="Insert()">Thêm danh mục</button>
+                    </div>
+                </form><br>
+                <form action="" id="form_edit" method="post">
+                    <div class="form_label" style="height: 100px; text-align: left;">
+                        <label for="" style="height: 30px; margin-right: 20px;">Tên danh mục:</label>
+                        <input type="text" autocomplete="off" name="name_dm_sua" id="name_dm_sua"
+                            placeholder="Nhập tên danh mục..." style="height: 30px; width: 300px;"><br>
+                        <button type="button" onclick="SaveUpdate()">Sửa danh mục</button>
+                    </div>
+                </form>
+                <table id="table-danhMuc">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên danh mục</th>
+                            <th colspan="2"><a href="#" onclick="Form_add()">Tạo mới</a></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="js/danh-muc.js"></script>
+</body>
+
+</html>

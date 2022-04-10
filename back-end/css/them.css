@@ -1,0 +1,67 @@
+.right form {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    display: grid;
+    grid-template-rows: 10%;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.right form .form_label {
+    display: grid;
+    grid-template-columns: 20% 60%;
+    padding: 10px 100px;
+}
+
+.right form input {
+    height: 30px;
+    padding: 5px 20px;
+    outline: none;
+}
+
+textarea {
+    padding: 5px 20px;
+    height: 100px;
+}
+
+form button {
+    width: 13%;
+    height: 50px;
+    margin-left: 25%;
+    cursor: pointer;
+    background-color: #333e48;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #fff;
+    color: #333e48;
+}
+form a {
+    width: 13%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 25%;
+    cursor: pointer;
+    background-color: #333e48;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+
+form a:hover {
+    border: 2px solid #333e48;
+    background: #fff;
+    color: #333e48;
+}
+div img{
+    margin: 10px 0 0 200px;
+}
